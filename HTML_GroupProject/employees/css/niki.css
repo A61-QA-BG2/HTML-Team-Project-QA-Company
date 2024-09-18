@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background:linear-gradient(135deg, #e0e0e0, #ffffff);
+    color: #333;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-container img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.profile-container h2 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding:10px;
+    color: #444;
+}
+
+/* Стилове за бутоните */
+.buttons-container {
+    margin-top: 20px;
+}
+
+.profile-btn {
+    padding: 12px 25px;
+    background-color: #333333;
+    opacity: 0.6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profile-btn:hover {
+    background-color: #e8b4b8;
+    color: #100f0f;}
+
+
+/*Niki's shenanigans*/
+
+.rectangle-wrapper {
+    position: absolute;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+}
+
+
+.rectangle {
+    width: 110px;
+    height: 110px;
+    background-color: #4abd96;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.left-rectangle {
+    left: 29%;
+}
+
+.right-rectangle {
+    left: 65%;
+}
+
+.rectangle-wrapper:hover .rectangle {
+    width: 125px;
+    height: 125px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.left-rectangle .hover-text {
+    display: inline-block;
+    position: absolute;
+    left: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: lightgray;
+    padding: 25px 30px;
+    border-radius: 20px;
+    opacity: 0;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.left-rectangle:hover .hover-text {
+    left: 185px; /* Slide text to the right of rectangle -->> */
+    opacity: 1; /* Fade in text */
+}
+
+.right-rectangle .hover-text {
+    display: inline-block;
+    position: absolute;
+    right: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: lightgray;
+    padding: 25px 30px;
+    border-radius: 20px;
+    opacity: 0;
+    white-space: nowrap; /* Normal text, otherwise buggy and vertical looking */
+    transition: all 0.3s ease;
+}
+
+.right-rectangle:hover .hover-text {
+    right: 185px;
+    opacity: 1;
+}
+
+.right-side-image {
+    position: absolute;
+    left: 60%; /* Adjust as needed to position it further to the right than the right rectangle */
+    top: 50%; /* Vertically center it relative to the container */
+    transform: translateY(-50%); /* Center image vertically */
+    width: 500px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 3; /* Higher than background image, but lower than other elements */
+}
