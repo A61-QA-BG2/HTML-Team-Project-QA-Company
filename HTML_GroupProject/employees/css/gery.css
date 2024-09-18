@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background:linear-gradient(135deg, #e0e0e0, #ffffff);
+    color: #333;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-container:hover {
+    transform: scale(1.05);
+}
+.profile-container img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.profile-container h2 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding:10px;
+    color: #444;
+}
+
+/* Стилове за бутоните */
+.buttons-container {
+    margin-top: 20px;
+}
+
+.profile-btn {
+    padding: 12px 25px;
+    background-color: #333333;
+    opacity: 0.6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profile-btn:hover {
+    background-color: #e8b4b8;
+    color: #100f0f;}

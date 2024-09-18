@@ -1,24 +1,27 @@
 html {
     background-color: #e4e4e4;
     font-family: Arial, sans-serif;
-    /*color: white;*/
     padding: 20px 0;
     text-align: center;
 }
 
 #titleHeader {
-        text-align: center;
-        margin: 0 auto;
-        width: fit-content;
-        color: #333333;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 15px;
+    color: #333333;
 }
 
 .description {
     text-align: justify-all;
     background-color: #333;
+    margin-top: 10px;
     color: #ffffff;
     opacity: 0.5;
     padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+
 }
 
 .CompanyDescription {
@@ -37,14 +40,16 @@ html {
     color: #333333;
 }
 
-.avatar{
+.avatar {
     width: 300px;
     height: 300px;
 }
-#newEmployee img{
+
+#newEmployee img {
     width: 300px;
     height: 300px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -57,25 +62,25 @@ html {
 }
 
 .employee-container #gergana, #milko {
-     align-content: center;
- }
+    align-content: center;
+}
 
-#newEmployeeButton{
+#newEmployeeButton {
     margin-top: 35px;
 }
 
 .button-container {
-    margin-top: 10px; /* Отстъп отгоре */
+    margin-top: 10px;
 }
 
-/* Стилове за бутона */
 .redirectionButton {
-    background-color: #333333; /* Син фон на бутона */
+    background-color: #333333;
+    text-decoration: none;
     color: #fff;
     border: none;
     opacity: 0.6;
-    border-radius: 5px; /* Заоблени ъгли на бутона */
-    padding: 10px 20px; /* Отстъпи около текста */
+    border-radius: 5px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -85,4 +90,6 @@ html {
 .redirectionButton:hover {
     background-color: #e8b4b8;
     color: #100f0f;
+    transition: background-color 0.3s ease-in-out;
+    transform: scale(1.02);
 }
