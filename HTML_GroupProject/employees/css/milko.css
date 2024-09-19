@@ -1,0 +1,65 @@
+html {
+    background-color: #e4e4e4;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-box {
+    background-color: #f7f7f7; /* Distinct lighter background color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #ccc; /* Subtle border for better definition */
+}
+
+.bio-text {
+    text-align: justify;
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.section-heading {
+    color: #333333;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons-container {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adjusted margin-bottom to fit within the profile box */
+}
+
+.redirectionButton {
+    background-color: #333333;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    opacity: 0.6;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.redirectionButton:hover {
+    background-color: #e8b4b8;
+    color: #100f0f;
+    transition: background-color 0.3s ease-in-out;
+    transform: scale(1.02);
+}
