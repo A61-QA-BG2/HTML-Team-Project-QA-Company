@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ded7db;;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-container:hover {
+    transform: scale(1.05);
+}
+.profile-container img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-container h1 {
+    font-size: 28px;
+    color: #666;
+    margin: 0;
+}
+
+.profile-container h2 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding:10px;
+    color: #666;
+}
+
+
+.buttons-container {
+    margin-top: 20px;
+}
+
+.profile-btn {
+    padding: 12px 25px;
+    background-color: #333333;
+    opacity: 0.6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profile-btn:hover {
+    background-color: #e8b4b8;
+    color: #100f0f;}
+
+.projects-section {
+    background-color: #333;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0.6;
+}
+
+.projects-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
+.project-role {
+    font-weight: bold;
+    color: #333;
+}
+
+.project-date {
+    font-style: italic;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+}
